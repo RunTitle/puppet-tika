@@ -1,7 +1,7 @@
 class tika::files {
   exec { "download_tika":
     cwd => "/tmp",
-    command => "/usr/bin/wget -c http://www.apache.org/dyn/closer.cgi/tika/tika-app-1.4.jar",
+    command => "/usr/bin/wget -c http://mirror.tcpdiag.net/apache/tika/tika-app-1.4.jar",
     creates => "/tmp/tika-app-1.4.jar",
     timeout => 0,
   }
